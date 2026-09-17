@@ -1,74 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <title>Pancito web</title>
 </head>
+
 <body>
-     <div class="text-bg-primary p-3"> <!--fondo azul con padding de 3-->
+    <div class="text-bg-primary p-3"> <!--fondo azul con padding de 3-->
 
-        
-    <header>
-        <div class="container mb-5">
 
-        <div class="row">
-            <div class="col">
-                <h1 class="h3">Pancito de hoy</h1>
+        <header>
+            <div class="container mb-5">
+
+                <div class="row">
+                    <div class="col">
+                        <h1 class="h3">Pancito de hoy</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <nav>
+                            <a class="text-decoration-none me-3" href="#">Inicio |</a>
+                            <a class="text-decoration-none me-3" href="#">Tipos de panes |</a>
+                            <a class="text-decoration-none" href="#">Panes</a>
+                        </nav>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
 
-        <div class="row">
-            <div class="col">
-                <nav>
-                    <a class="text-decoration-none me-3" href="#">Inicio |</a>
-                    <a class="text-decoration-none me-3" href="#">Tipos de panes |</a>
-                    <a class="text-decoration-none" href="#">Panes</a>
-                </nav>
-            </div>
-        </div>
-        </div>
-    </header>
+        <main>
 
-<main>
+            <section>
+                <!-- buscador -->
+                <div class="container">
 
-    <section>
-        <!-- buscador -->
-    <div class="container">
+                    <div class="row"> <!---arreglo en fila -->
 
-        <div class="row">        <!---arreglo en fila -->
+                        <div class="col"> <!---arreglo en columna para buscador y botón -->
 
-            <div class="col">      <!---arreglo en columna para buscador y botón -->
+                            <h2>Encuentra el pan para acompañar tu café del día</h2>
 
-                <h2>Encuentra el pan para acompañar tu café del día</h2>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="🔎 Buscar pan...">
 
-                <div class="input-group">
-                    <input
-                        type="text"                        
-                        class="form-control"
-                        placeholder="🔎 Buscar pan..."
-                    >
+                                <button class="btn btn-primary" type="button">
+                                    Buscar
+                                </button>
+                            </div>
 
-                    <button
-                        class="btn btn-primary"
-                        type="button">
-                        Buscar
-                    </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section> <!-- aquí termina buscador-->
+
+            <section>
+                <!-- libros -->
+                <div class="container my-5">
+
+                    <!-- Título principal -->
+                    <h1 class="text-center text-primary mb-5 fw-bold text-black-50 bg-white">CATÁLOGO DE PANES</h1>
+
+                    <!-- Fila que organiza las columnas -->
+                    <div class="row g-4 justify-content-center">
+
+                        <!-- Pan 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card shadow-sm" style="width: 18rem;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMy9xzVIdHkrTIGS26vMLesGJCtVmeIQ8Ie3g8qoD_7A&s=10"
+                                    class="card-img-top" alt="Portada Eloquent JavaScript">
+                                <div class="card-body">
+                                    <h5 class="card-title">Concha Rellena</h5>
+                                    <p class="card-text">$50</p>
+                                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pan 2 -->
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card shadow-sm" style="width: 18rem;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnUZEXqwBsXpUGgdNczhaBJ6eB4RudLF87c_5GG-ahfg&s=10"
+                                    class="card-img-top" alt="Portada Eloquent JavaScript">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cuernito</h5>
+                                    <p class="card-text">$25</p>
+                                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pan 3 -->
+
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div class="card shadow-sm" style="width: 18rem;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUllqmYViQFFXGawpKyWbLGwcc6YjTLKiLdlYT5TbsyQ&s=10"
+                                    class="card-img-top" alt="Portada Eloquent JavaScript">
+                                <div class="card-body">
+                                    <h5 class="card-title">Donas</h5>
+                                    <p class="card-text">$25</p>
+                                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <main class="container my-auto py-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="p-4 bg-white border rounded-3 shadow-sm">
+                            <h3 class="text-primary text-center mb-4 fw-bold">Haz tu pedido aquí</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label fw-semibold">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre"
+                                        placeholder="Ingresa tu nombre completo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="number" class="form-label fw-semibold">Ingresa tu número de
+                                        contacto</label>
+                                    <input type="number" class="form-control" id="number" placeholder=" +55 11 111 111"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Producto" class="form-label fw-semibold">Producto</label>
+                                    <input type="text" class="form-control" id="Producto"
+                                        placeholder="Ingresa el producto" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="number" class="form-label fw-semibold">Cantidad</label>
+                                    <input type="number" class="form-control" id="number" required>
+                                </div>
+                                <div class="d-grid gap-2 mt-4">
+                                    <button type="submit" class="btn btn-primary fw-bold">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </main>
+
+        <footer class="bg-dark text-light py-4 mt-5">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <h3 class="h5">Pancito de hoy</h3>
+
+                        <p class="mb-0">
+                            Tu panadería de siempre. Recien horneado.
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-6 text-md-end">
+
+                        <p class="mb-2">
+                            <i class="bi bi-envelope"></i>
+                            mipancito@example.com
+                        </p>
+
+                        <div>
+
+                            <a href="#" class="text-light me-3">
+                                <i class="bi bi-github"></i>
+                            </a>
+
+                            <a href="#" class="text-light me-3">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+
+                            <a href="#" class="text-light">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="row">
+
+                    <div class="col text-center">
+                        <small>
+                            © 2026 Tu pancito de hoy. Todos los derechos reservados.
+                        </small>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+        </footer>
 
-    </div>
-</section>  <!-- aquí termina buscador-->
-    
-
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
+</html>
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
